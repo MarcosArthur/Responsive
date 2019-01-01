@@ -4,11 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assents/css/style.css">
   <title>Responsive</title>
 </head>
 <body>
   <header class="cabecalho">
-    
+    <h1>/Responsive</h1>
+    <form>
+      <input type="url" placeholder="url" data-url="input-url">
+    </form>
+    <button class="buttonStart">Visualizar</button>
   </header>
+
+  <section class="buttons">
+    <button class="btns">800x1200</button>
+    <button class="btns">1280x800</button>
+    <button class="btns">600x1024</button>
+    <button class="btns">1024x600</button>
+    <button class="btns">768x960</button>
+    <button class="btns">960x768</button>
+    <button class="btns">480x800</button>
+    <button class="btns">800x480</button>
+    <button class="btns">320X480</button>
+    <button class="btns">480x320</button>
+  </section>
+
+  <div class="container-iframe">
+    <iframe src="" data-iframe></iframe>
+  </div>
+
+  <script src="assents/js/Responsive.js"></script>
+  <script>
+    let responsive = new Responsive('[data-iframe]', '.btns','[data-url]', '.buttonStart' );
+  </script>
 </body>
 </html>
