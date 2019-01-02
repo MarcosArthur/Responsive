@@ -32,6 +32,7 @@ class Responsive {
 
   _buttonResize(e) {
     let dimensions = e.target.textContent.split('x');
+    this.IsIframeReady();
     this.resizeIframe(...dimensions);
   }
 
@@ -51,7 +52,7 @@ class Responsive {
 
   getUtlInput() {
     this.setUtlIframe(this.inputURL.value);
-    this.IsIframeReady();
+    this.scrolling();
   }
 
   scrolling() {
