@@ -32,7 +32,7 @@ class Responsive {
 
   _buttonResize(e) {
     let dimensions = e.target.textContent.split('x');
-    this.resizeIframe(dimensions);
+    this.resizeIframe(...dimensions);
   }
 
   eventButtonResize() {
@@ -41,8 +41,8 @@ class Responsive {
     });
   }
 
-  resizeIframe(dimensions) {
-    this.iframe.style = `width: ${dimensions[0]}px; height: ${dimensions[1]}px;`;
+  resizeIframe(width, height) {
+    this.iframe.style = `width: ${width}px; height: ${height}px;`;
   }
 
   eventButtonUrl() {
