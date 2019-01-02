@@ -68,7 +68,7 @@ class Responsive {
 
   setUtlIframe(url) {
     this.iframe.src = url;
-    this.iframe.style = `height: 100vh;`;
+    this.iframe.parentNode.style = `height: 100vh;`;
   }
 
 }
