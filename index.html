@@ -9,33 +9,33 @@
 </head>
 <body>
   <header class="cabecalho">
-    <h1>/Responsive</h1>
-    <form>
-      <input type="url" placeholder="url" data-url="input-url">
+    <h1 class="cabecalho__title">/Responsive</h1>
+    <form class="cabecalho__form">
+      <input type="url" placeholder="url" data-url="input-url" class="cabecalho__input">
     </form>
-    <button class="buttonStart">Visualizar</button>
+    <button class="cabecalho__button buttonStart">Visualizar</button>
   </header>
 
   <section class="buttons">
-    <button class="btns">800x1200</button>
-    <button class="btns">1280x800</button>
-    <button class="btns">600x1024</button>
-    <button class="btns">1024x600</button>
-    <button class="btns">768x960</button>
-    <button class="btns">960x768</button>
-    <button class="btns">480x800</button>
-    <button class="btns">800x480</button>
-    <button class="btns">320X480</button>
-    <button class="btns">480x320</button>
+    <button class="button__button-item">800x1200</button>
+    <button class="button__button-item">1280x800</button>
+    <button class="button__button-item">600x1024</button>
+    <button class="button__button-item">1024x600</button>
+    <button class="button__button-item">768x960</button>
+    <button class="button__button-item">960x768</button>
+    <button class="button__button-item">480x800</button>
+    <button class="button__button-item">800x480</button>
+    <button class="button__button-item">320X480</button>
+    <button class="button__button-item">480x320</button>
   </section>
 
-  <div class="container-iframe">
-    <iframe src="" data-iframe></iframe>
+  <div class="container__iframe">
+    <iframe src="" data-iframe class="container__iframe-item"></iframe>
   </div>
 
   <script src="assents/js/Responsive.js"></script>
   <script>
-    let responsive = new Responsive('[data-iframe]', '.btns','[data-url]', '.buttonStart' );
+    let responsive = new Responsive('[data-iframe]', '.button__button-item','[data-url]', '.buttonStart', '.buttons');
   </script>
 </body>
 </html>
